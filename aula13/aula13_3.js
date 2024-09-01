@@ -1,7 +1,7 @@
 /*
     Objetivo: Contar a quantidade de filmes por gênero.
     Use o método forEach para iterar sobre o array filmes.
-    Para cada filme, verifique se o gênero já existe no objeto de contagem. 
+    Para cada filme, verifique se o gênero já existe no objeto de contagem.
     Se existir, incremente a contagem; se não, adicione o gênero ao objeto com a contagem inicial de 1.
 */
 
