@@ -6,7 +6,7 @@ class Node {
       this.previous = null; // Aponta para o nó anterior na lista (inicialmente null)
     }
   }
-  
+
   // Classe que representa a lista duplamente encadeada
   class DoublyLinkedList {
     constructor() {
@@ -14,11 +14,11 @@ class Node {
       this.tail = null; // O último nó da lista (inicialmente null)
       this.size = 0; // Tamanho da lista (número de nós na lista)
     }
-  
+
     // Método para adicionar um nó ao final da lista
     add(data) {
       let newNode = new Node(data); // Cria um novo nó com o dado fornecido
-  
+
       if (this.head === null) {
         // Se a lista estiver vazia (head é null)
         this.head = newNode; // O novo nó se torna o head (primeiro nó)
@@ -28,21 +28,21 @@ class Node {
         newNode.previous = this.tail; // O novo nó aponta para o antigo tail como seu nó anterior
         this.tail = newNode; // O novo nó se torna o novo tail da lista
       }
-  
+
       this.size++; // Incrementa o tamanho da lista
     }
-  
+
     // Método para inserir um nó em uma posição específica da lista
     insertAt(data, index) {
       // Verifica se o índice é válido (dentro dos limites da lista)
       if (index < 0 || index > this.size) {
         return console.log("Index fora dos limites!"); // Sai do método se o índice for inválido
       }
-  
+
       let newNode = new Node(data); // Cria um novo nó com o dado fornecido
       let current = this.head; // Começa a busca a partir do head (primeiro nó)
       let previous = null; // Para armazenar o nó anterior durante a iteração
-  
+
       if (index === 0) {
         // Se o índice for 0, insere no início da lista
         if (this.head === null) {
@@ -66,14 +66,14 @@ class Node {
           previous = current; // O nó anterior ao atual
           current = current.next; // Avança para o próximo nó
         }
-  
+
         newNode.next = current; // O novo nó aponta para o nó atual como próximo
         newNode.previous = current.previous; // O novo nó aponta para o nó anterior do nó atual como anterior
-  
+
         current.previous.next = newNode; // O nó anterior ao atual aponta para o novo nó como próximo
         current.previous = newNode; // O nó atual aponta para o novo nó como anterior
       }
-  
+
       this.size++; // Incrementa o tamanho da lista
     }
     removeAt(index) {
@@ -81,7 +81,7 @@ class Node {
         return console.log("Index fora dos limites!");
       }
       let current = this.head;
-  
+
       if (index === 0) {
         this.head = this.head.next;
         if (this.size === null) {
@@ -106,13 +106,13 @@ class Node {
         return console.log("Index fora dos limites!");
       }
       let current = this.head;
-  
+
       for (let i = 0; i < index; i++) {
         current = current.next;
       }
       return current.data;
     }
-  
+
     print() {
       let current = this.head;
       let result = [];
@@ -122,7 +122,7 @@ class Node {
       }
       console.log(result.join(" <=> "));
     }
-  
+
     getSize() {
       return this.size;
     }
@@ -149,4 +149,3 @@ class Node {
         this.head = prev;
     }
 }
-
