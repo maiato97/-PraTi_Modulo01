@@ -48,7 +48,7 @@ class LinkedList {
         }
 
         return -1
-    }    
+    }
 
     isEmpty() {
         return this.size === 0
@@ -67,5 +67,3 @@ list.add("Elemento 2")
 list.add("Elemento 3")
 
 console.log(list.indexOf("Elemento 3"))
-
-

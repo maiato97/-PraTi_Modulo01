@@ -3,4 +3,3 @@ let exibirFuncao = function(){
 }
 
 exibirFuncao() //chama a função 'exibirFuncao', neste caso nao precisa de console.log
-

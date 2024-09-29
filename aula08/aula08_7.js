@@ -13,4 +13,3 @@ let data1 = new Date();
 let data2 = new Date();
 
 let milisegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime());
-

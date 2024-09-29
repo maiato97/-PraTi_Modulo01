@@ -42,7 +42,7 @@ console.log(ArrSoma(lista))
 
 let ArrMax = function() {
     let max = lista[0]
-    
+
     for(let j = 0; j < lista.length; j++){
         if(lista[j] > max){
             max = lista[j]
@@ -71,7 +71,7 @@ console.log(ArrReverso(lista))
 //4. Criem um novo array contendo apenas os números pares
 
  let arr = [1, 2, 3, 4]
- 
+
  let ArrPares = function() {
     let pares = []
 

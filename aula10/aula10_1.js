@@ -9,7 +9,7 @@ const professor = {
 }
 
 /*
-    For In para iterar sobre as propriedades dentro das notas, 
+    For In para iterar sobre as propriedades dentro das notas,
     calcule a média da turma. Se a média for maior que 3.0 acima da média.
 */
 let somaNotas = 0
@@ -26,4 +26,3 @@ if (media >= 3){
 } else {
     console.log(`Média: ${media.toFixed(2)}, a turma está abaixo da média.`)
 }
-

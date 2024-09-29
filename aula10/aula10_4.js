@@ -7,7 +7,7 @@ E execute uma pesquisa binária para encontrar o valor certo.
 
 function binarySearch(arr, element) {
     let begin = 0
-    let end = arr.length - 1 
+    let end = arr.length - 1
 
     while (begin <= end) {
         let middle = Math.floor((begin + end) / 2)

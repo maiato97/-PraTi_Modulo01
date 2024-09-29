@@ -31,4 +31,3 @@ for(let k = lista.length - 1; k >= 0; k--){
 }
 
 console.log(reverso)
-

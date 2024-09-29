@@ -17,7 +17,6 @@ console.log(pessoa)
 
 pessoa.falar = function() {
     return `Meu nome é ${this.nome}, tenho ${this.idade} de idade e sou ${this.profissao}`
-} 
+}
 
 console.log(pessoa)
-

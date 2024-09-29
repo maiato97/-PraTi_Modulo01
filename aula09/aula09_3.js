@@ -9,4 +9,3 @@ const pessoa = { // objetos no js são definidos por chave e valor dentro de {}
 for (let chave in pessoa) { // for on mais usado em objetos
     console.log(chave + ": " + pessoa[chave])
 }
-

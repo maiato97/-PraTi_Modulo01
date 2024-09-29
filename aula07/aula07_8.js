@@ -43,6 +43,3 @@ let num1 = parseInt(prompt("Digite o primeiro numero: "))
 let num2 = parseInt(prompt("Digite o segundo numero: "))
 
 console.log(calculadora(operacao, num1, num2, soma, subtracao, multiplicacao, divisao))
-
-
-
